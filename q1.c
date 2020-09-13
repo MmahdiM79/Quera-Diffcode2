@@ -10,7 +10,7 @@ long findLen(int num, int base)
 {
     long len = 0;
 
-    while (powl(base, len) < num)
+    while (powl(base, len) <= num)
         len++;
     
     return len;
